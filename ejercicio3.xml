@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsltemplate match="/">
+<html>
+<body>
+<h2>My CD Collection</h2>
+<table border="1">
+<tr>
+<th style="text-align:left">Title</th>
+<th style="text-align:left">Artist</th>
+</tr>
+<xslfor-each select="catalog/cd">
+<tr>
+<td><xslvalue-of select="title"/></td>
+<td><xslvalue-of select="artist"/></td>
+</tr>
+</xslfor-each>
+</table>
+</body>
+</html>
+</xsltemplate>

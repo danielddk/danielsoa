@@ -1,0 +1,10 @@
+Formas de darle formato a un xml 
+1) Utilizando php 
+La extension DOM (siglas en inglés de Document Object Model) 
+permite manipular documentos XML mediante la API DOM con PHP.
+
+2)Con hojas de estilo CSS 
+El HTML tiene un elemento link para vincular a hojas de estilo externas, 
+pero no todo formato basado en XML tendrá tal elemento. Si no hay un elemento 
+apropiado, aún puede adjuntar hojas de estilo externas por medio de la 
+instrucción de procesamiento xml-stylesheet 

@@ -1,0 +1,21 @@
+<Catalogo>
+
+	<Planta category="Medicinales">
+		<Tipo>Medicinales</Tipo>
+		<Nombre>Manzanilla</Nombre>
+		<Precio>5 dolares</Precio>
+	</Planta>	
+
+	<Planta category="Industriales">
+		<Tipo>Industriales</Tipo>
+		<Nombre>Diente de Leon</Nombre>
+		<Precio>3 dolares</Precio>
+	</Planta>
+
+	<Planta category="Alimenticias">
+		<Tipo>Alimenticias</Tipo>
+		<Nombre>Perejil</Nombre>
+		<Precio>1 dolares</Precio>
+	</Planta>
+
+</Catalogo>

@@ -1,0 +1,10 @@
+¿Como presenta el navegador el dumento XML?
+El navegador muestra el ejercicio numero 2 donde se debe realizar una
+pagina con etiquetas html pra generar una tabla como un arbol de xml 
+
+¿Muestra la tabla HTML o muestra el arbol XML?
+
+Muestra el arbol XML ¿Por que?
+
+ 
+por que considera como parate del arbol no como etiquetas de html 

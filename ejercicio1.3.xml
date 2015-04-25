@@ -1,0 +1,20 @@
+<Restaurante>
+
+	<Menu Category="Entrada">
+	<Nombre>Arroz Relleno</Nombre>
+	<Horario>15 a 16 horas</Horario>
+	<Precio>3 dolares </Precio>
+	<Chef>Daniel Hurtado</Chef>
+	
+	</Menu>
+
+	<Menu Category="Postre">
+	<Nombre>Helado</Nombre>
+	<Horario>15 a 17 horas</Horario>
+	<Precio>1 dolar</Precio>
+	<Chef>Daniel Hurtado</Chef>
+	
+	</Menu>
+
+
+</Restaurante>
