@@ -1,0 +1,21 @@
+<Coleccion>
+
+	<Cd Category="Rock">
+	<NombreCd>NEVERMIND</NombreCd>
+	<Tipo>Rock</Tipo>
+	<Marca>Sony</Marca>
+	<Autor>NIrvana</Autor>
+	<FechaPublicacion>1990</FechaPublicacion>
+	</Cd>
+
+	<Cd Category="Salsa">
+	<NombreCd>El rey</NombreCd>
+	<Tipo>Urbana</Tipo>
+	<Marca>Universal</Marca>
+	<Autor>Hector Lavoe</Autor>
+	<FechaPublicacion>1998</FechaPublicacion>
+	</Cd>
+
+
+</Coleccion>
+ 
