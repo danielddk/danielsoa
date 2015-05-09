@@ -1,0 +1,7 @@
+<xs:attribute name="gender">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:pattern value="male|female"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:attribute>
