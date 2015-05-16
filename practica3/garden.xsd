@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xsd:annotation>
+<xsd:documentation>
+Shiporder schema as Garden of Eden design.
+</xsd:documentation>
+</xsd:annotation>
+
+<xsd:element name="shiporder" type="tns:shiporderType"/>
+<xsd:element name="orderperson" type="tns:orderPersonType"/>
+<xsd:element name="shipto" type="tns:shiptoType"/>
+<xsd:element name="item" type="tns:itemType"/>
+<xsd:element name="orderid" type="tns:orderidType"/>
+<xsd:element name="name" type="xsd:string"/>
+<xsd:element name="address" type="xsd:string"/>
+<xsd:element name="city" type="xsd:string"/>
+<xsd:element name="country" type="xsd:string"/>
+<xsd:element name="title" type="xsd:string"/>
+<xsd:element name="note" type="xsd:string"/>
+<xsd:element name="quantity" type="xxs:positiveInteger"/>
+<xsd:element name="price" type="xxs:decimal"/>
+
+<xsd:complexType name ="shiporderType">
+	<xsd:sequence>
+	  <xs:element ref="tns:orderperson"/>
+      <xs:element ref="tns:shipto"/>
+      <xs:element ref="tns:name"/>
+      <xs:element ref="tns:address" />
+      <xs:element ref="tns:city" />
+      <xs:element ref="tns:country" />
+      <xs:element ref="tns:item" />
+      <xs:element ref="tns:title" />
+      <xs:element ref="tns:note" />
+      <xs:element ref="tns:quantity" />
+      <xs:element ref="tns:price" />
+      <xs:attribute ref="tns:orderid"/>
+	</xsd:sequence>
+</xsd:complexType >
+
+
+</xs:schema>
