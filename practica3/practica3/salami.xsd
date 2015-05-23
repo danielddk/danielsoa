@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="shiporder">
+	 <xs:complexType>
+	 	<xs:sequence>
+	 		<xsd:element ref="tns:orderperson"/>
+	 		<xsd:element ref="tns:shipto"/>
+	 		<xsd:element ref="tns:name"/>
+	 		<xsd:element ref="tns:address"/>
+	 		<xsd:element ref="tns:city"/>
+			<xsd:element ref="tns:country"/>
+			<xsd:element ref="tns:item"/>
+			<xsd:element ref="tns:title"/>
+			<xsd:element ref="tns:note"/>
+			<xsd:element ref="tns:quantity"/>
+			<xsd:element ref="tns:price"/>
+			<xsd:attribute ref="tns:orderid"/>
+	 	</xs:sequence>
+	 </xs:complexType>
+</xs:element>	 	
+
+
+<xsd:element name="orderperson"/>
+<xsd:element name="shipto"/>
+<xsd:element name="name"/>
+<xsd:element name="address"/>
+<xsd:element name="city"/>
+<xsd:element name="country"/>
+<xsd:element name="item"/>
+<xsd:element name="title"/>
+<xsd:element name="note"/>
+<xsd:element name="quantity"/>
+<xsd:element name="price"/>
+<xsd:attribute name="orderid"/>
+</xs:schema>
+
+
+
