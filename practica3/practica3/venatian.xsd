@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="shiporder" type="tns:ShiporderType"/>
+<xs:complexType name="ShiptoType">
+          <xs:sequence>
+            <xs:element name="name" type="tns:NameType"/>
+            <xs:element name="address" type="tns:AddressType"/>
+            <xs:element name="city" type="tns:CityType"/>
+            <xs:element name="country" type="tns:CountryType"/>
+          </xs:sequence>
+</xs:complexType>
+
+    <xsd:simpleType name="NameType">
+    <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="AddressType">
+    <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="CityType">
+    <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="CountryType">
+    <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+
+
+    <xs:complexType name="ItemType">
+          <xs:sequence>
+            <xs:element name="title" type="tns:TitleType"/>
+            <xs:element name="note" type="tns:NoteType"/>
+            <xs:element name="quantity" type="tns:QuantityType"/>
+            <xs:element name="price" type="tns:PriceType"/>
+          </xs:sequence>
+    </xs:complexType>
+
+    <xsd:simpleType name="TitleType">
+    <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="NoteType">
+    <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="QuiantityType">
+    <xsd:restriction base="xsd:positiveInteger">
+        <xsd:minLength value="1"/> 
+    </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="PriceType">         
+    <xsd:restriction base="xsd:decimal"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="OrderidType">
+    <xsd:restriction base="xsd:string"/> 
+    </xsd:simpleType>
+
+
+</xs:schema>

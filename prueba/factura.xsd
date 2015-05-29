@@ -1,0 +1,90 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://ns.soacookbook.com/eden"
+  xmlns:tns="http://ns.soacookbook.com/eden"
+  elementFormDefault="qualified">
+<xsd:annotation>
+    <xsd:documentation>
+      Book schema as Garden of Eden design.
+    </xsd:documentation>
+</xsd:annotation>
+
+
+ <xsd:simpleType name="tipoID">
+ <xsd:restriction base="xsd:positiveInteger">
+ <xsd:totalDigits value="4"/>
+ </xsd:restriction>
+ </xsd:simpleType>
+
+ <xsd:simpleType name="tipoIVA">
+ <xsd:restriction base="xsd:positiveInteger">
+ <xsd:totalDigits value="2"/>
+ </xsd:restriction>
+ </xsd:simpleType>
+
+
+ <xsd:simpleType name="tipoFormaPago">
+ <xsd:restriction base="xsd:string">
+ <xsd:enumeration value="efectivo"/>
+ <xsd:enumeration value="tarjeta"/>
+ <xsd:enumeration value="cheque"/>
+ </xsd:restriction>
+ </xsd:simpleType>
+
+
+<xsd:element name="factura"		  type="tns:facturatype"/>
+<xsd:element name="datos_empresa" type="tns:string"/>
+<xsd:element name="nombre"        type="xsd:string"/>
+<xsd:element name="dir"    type="xsd:string"/>
+<xsd:element name="ciudad" type="xsd:string"/>
+<xsd:element name="provincia" type="xsd:string"/>
+<xsd:element name="telefono"  type="xsd:integer"/>
+<xsd:element name="datos_cliente"  type="tns:string"/>
+<xsd:element name="nombre"   type="xsd:string"/>
+<xsd:element name="dir_env"  type="xsd:string"/>
+<xsd:element name="ciudad"   type="xsd:string"/>
+<xsd:element name="provincia"  type="xsd:string"/>
+<xsd:element name="datos_factura"  type="tns:string"/>
+<xsd:element name="fecha"   type="xsd:date"/>
+<xsd:element name="producto"  type="xsd:string"/>
+<xsd:element name="cod"   type="xsd:integer"/>
+<xsd:element name="desc"  type="xsd:double"/>
+<xsd:element name="cant"  type="xsd:double"/>
+<xsd:element name="precio"  type="xsd:double"/>
+
+<xsd:complexType name="facturatype">
+	<xs:simpletype>
+	<xs:restriction>
+		<xs:pattern value="4"/>
+    </xs:restriction>        
+	</xs:simpletype>
+	  <xsd:sequence>
+      <xsd:element ref="tns:datos_empresa"/>
+      <xsd:element ref="tns:nombre"/>
+      <xsd:element ref="tns:dir"/>
+      <xsd:element ref="tns:ciudad"/>
+      <xsd:element ref="tns:provincia"/>
+      <xsd:element ref="tns:telefono"/>
+      <xs:simpletype>
+	<xs:restriction>
+		<xs:pattern value=´"2{0-9}{0-9}{0-9} {0-9}{0-9}{0-9}"/>
+    </xs:restriction>        
+	</xs:simpletype>
+	  <xsd:sequence>
+      <xsd:element ref="tns:datos_ciudad"/>
+      <xsd:element ref="tns:nombre"/>
+      <xsd:element ref="tns:dir_env"/>
+      <xsd:element ref="tns:ciudad"/>
+      <xsd:element ref="tns:provincia"/>
+      <xsd:element ref="tns:datos_factura"/>
+      <xsd:element ref="tns:fecha"/>
+	  <xsd:element ref="tns:producto"/>
+	  <xsd:element ref="tns:cod"/>
+	  <xsd:element ref="tns:desc"/>
+	  <xsd:element ref="tns:cant"/>
+	  <xsd:element ref="tns:precio"/>
+	  </xsd:sequence>
+</xsd:complexType>
+ 
+
+</xsd:schema>
+
