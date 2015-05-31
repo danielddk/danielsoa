@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd = "http://www.w3.org/2001/XMLSchema"
+ targetNamespace="http://www.trabajo.com/docencia"
+ elementFormDefault="qualified"
+ attributeFormDefault="qualified">
+ <!-- Schema Salami -->
+ <xs:element name="grupo">
+	 <xs:complexType>
+	 	<xs:sequence>
+	 		<xsd:element ref="tns:nombre"/>
+	 		<xsd:element ref="tns:horas"/>
+	 		<xsd:element ref="tns:profesores"/>
+	 		</xs:sequence>
+	 </xs:complexType>
+</xs:element>	 	
+
+<xsd:element name="nombre"/>
+<xsd:element name="horas"/>
+<xsd:element name="profesores"/>
+
+
+ </xsd:schema>
