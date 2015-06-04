@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd = "http://www.w3.org/2001/XMLSchema"
+ targetNamespace="http://www.trabajo.com/alumno"
+ elementFormDefault="qualified"
+ attributeFormDefault="qualified">
+
+  <xs:element name="pensum" type="xs:string"/>
+  <xs:element name="asignatura">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="nombre"/>
+        <xs:element type="xs:byte" name="horas"/>
+        <xs:element type="xs:string" name="profesor"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

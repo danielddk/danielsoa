@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+	<libro>
+		<titulo>Cien años de soledad</titulo>
+		<autor>Gabriel Garcia Marquez</autor>
+		<area>Novela</area>
+		<editorial>Editorial 1</editorial>
+		<precio>$ 10.00</precio>
+		<anio>1960</anio>
+	</libro>
+
+	<libro>
+		<titulo>El Señor de los Anillo</titulo>
+		<autor>J.R.R. Tolkien</autor>
+		<area>Fantasia</area>
+		<editorial>Editorial 2</editorial>
+		<precio>$ 15.46</precio>
+		<anio>2001</anio>
+	</libro>
+
+	<libro>
+		<titulo>SOA Simple</titulo>
+		<autor>Lonneke Dikmans</autor>
+		<area>Tecnica</area>
+		<editorial>Editorial 3</editorial>
+		<precio>$ 45.78</precio>
+		<anio>2015</anio>
+	</libro>
+
+	<libro>
+		<titulo>Nacho Lee</titulo>
+		<autor>Nacho</autor>
+		<area>Lectura</area>
+		<editorial>Editorial 2</editorial>
+		<precio>$ 11.23</precio>
+		<anio>1986</anio>
+	</libro>
+
+
+	<libro>
+		<titulo>22/11/1963</titulo>
+		<autor>Stephen KIng</autor>
+		<area>Novela</area>
+		<editorial>Editorial 4</editorial>
+		<precio>$ 5.63</precio>
+		<anio>2009</anio>
+	</libro>
+
+
+	<libro>
+		<titulo>Hamlet</titulo>
+		<autor>William Shakespeare</autor>
+		<area>Novela</area>
+		<editorial>Editorial 1</editorial>
+		<precio>$ 23.51</precio>
+		<anio>1920</anio>
+	</libro>
+
+
+</biblioteca>
